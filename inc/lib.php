@@ -508,7 +508,7 @@ function server_kill_all() {
  * @return bool
  */
 function server_running($name) {
-	return !!strpos(`/opt/app-root/miniconda3/bin/tmux ls`, KT_SCREEN_NAME_PREFIX . $name);
+	return ((strpos(`/opt/app-root/miniconda3/bin/tmux ls`, KT_SCREEN_NAME_PREFIX . $name) !== FALSE);
 }
 
 /**
