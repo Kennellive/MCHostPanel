@@ -6,7 +6,7 @@ MCHostPanel can manage an unlimited number of Minecraft control panels, includin
 ### Requirements
 
 - PHP 5.3+ with GD library (GD only used for player faces)
-- GNU Screen (installed by default on many platforms)
+- tmux installed by MiniConda
 - Java 6/7 Headless (OpenJDK JRE works great)
 
 ### Installation
