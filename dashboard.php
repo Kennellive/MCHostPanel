@@ -21,7 +21,7 @@ if (!empty($_SESSION['user'])) {
 	// Check user exists and password is good
 	if (!$user || !bcrypt_verify($_POST['pass'], $user['pass'])) {
 		// Login failure, redirect to login page
-		header('Location: ./?error=badlogin');
+		header('Location: /index.php?error=badlogin');
 		exit('Not Authorized');
 	}
 
